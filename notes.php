@@ -19,7 +19,7 @@ if(isset($_GET['xoa_id'])){
 	exit;
 } 
 
-$notes = $db->query("SELECT * FROM notes ORDER BY id ASC")->fetchAll(PDO::FETCH_ASSOC);
+$notes = $db->query("SELECT * FROM notes ORDER BY id DESC")->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 <title>Ghi chú</title>
