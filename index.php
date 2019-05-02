@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
 		foreach ($tit[1] as $key => $value) {
 			preg_match('/truyencv\.com\/([a-z0-9-]+)\//', $url, $name);
 			$value = preg_replace('/.*?-\s*(.*)/', '$1', $value);
-			echo "<pre><a href='bookmark.php?title={$name[1]} • {$value}' title='Bookmark'>$key</a> => <a href='getTCV.php?link={$urls[$key]}'>$value</a></pre>\n";
+			echo "<pre><a href='bookmark.php?title={$name[1]} • {$value}' onclick = 'if (! confirm(\"Bookmark?\")) { return false; }'>$key</a> => <a href='getTCV.php?link={$urls[$key]}'>$value</a></pre>\n";
 		}
 		echo '</div>';
 
