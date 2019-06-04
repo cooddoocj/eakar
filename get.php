@@ -6,7 +6,7 @@ $link = $_GET['link'];
 $s = $_GET['s'];
 $e = $_GET['e'];
 
-$HOME = 'https://' . $_SERVER["SERVER_NAME"];
+$HOME = 'http://' . $_SERVER["SERVER_NAME"];
 
 for ($i = $s; $i <= $e; $i++) { 
 	$urls[] = $HOME . '/getTCV.php?link=' . $link . 'chuong-' . $i . '/';
