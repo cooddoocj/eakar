@@ -132,14 +132,4 @@ if (isset($error)) {
 <hr>
 <p><a href="regex.php">Regex</a> - <a href="notes.php">Notes</a> - <a href="bookmark.php">Bookmark</a></p>
 
-<?php
-date_default_timezone_set('Asia/Ho_Chi_Minh');
 
-$date = date('d/m/Y - H:i:s');
-
-echo $date;
-
-$tep = fopen("time.txt", "a+");
-fwrite($tep, "$date\n");
-fclose($tep);
-?>
